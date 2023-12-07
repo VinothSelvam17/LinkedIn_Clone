@@ -1,0 +1,41 @@
+extends layout/login_layout.pug 
+
+block content 
+    .container-fluid
+        .row.mt-3
+          .col-md-1
+          .col-md-3.tab
+            h2.h2 Linked 
+              span in
+            h1
+          .col-md-4
+          .col-md-4
+        .row
+          .col-md-3 
+          .col-md-6.tab2
+            h2 Make the most of your professional life
+            form#regFrm.tab1(method="post") 
+              .form-group
+                input(type='text',name="username",required='')
+                label(for='userame') UserName
+              .form-group
+                input(type='text',name="role",required='')
+                label(for='role') Role
+              .form-group
+                input(type='email',name="email",required='')
+                label(for='email') Email
+              .form-group
+                input(type='text',name="phonenumber",required='')
+                label(for='phonenumber') PhoneNumber
+              .form-group
+                input#password(type='password',name="password",required='')
+                label(for='password') Password
+              .form-group
+                input#confirmPassword(type='password',name="confirmpassword",required='')
+                label(for='confirmpassword') ConfirmPassword
+              .form-group
+                button(type='submit') Agree join 
+              .line or
+                a(href='loginPage') Already have account..?
+          .col-md-3
+    script(src="/js/script.js",type="text/JavaScript") 

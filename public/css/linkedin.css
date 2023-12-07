@@ -1,0 +1,96 @@
+.body{
+    height: 100Vh;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serifs;
+    font-size: 17px;
+    letter-spacing: 1px;
+    user-select: none;
+}
+.tab1{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 2px;
+    text-align:left;
+    padding: 20px;
+    box-shadow: 1px 1px 5px 1px rgb(201, 198, 198),
+                    1px 1px 5px 1px rgb(201, 198, 198);
+    margin: 30px 15px;
+}
+.tab1 input{
+    height: auto;
+    width: 350px;
+}
+.tab .h2{
+    padding: 10px;
+    font-weight: 800;
+    color:  blue;
+}
+.tab span{
+    background-color: blue;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+.tab2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.form-group{
+    margin: 10px 0px;
+    height: 40px;
+    position: relative;
+    font-weight: 600;
+}
+.form-group label{
+    position: absolute;
+    background: none;
+    pointer-events: none;
+    top: 1px;
+    left: 10px;
+    color: rgb(93, 93, 93);
+}
+.form-group input{
+    outline: none;
+    margin-top: -17px;
+    padding: 8px 13px;
+}
+.form-group button{
+    background-color: blue;
+    padding: 0.8rem 7rem;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-weight: 600;
+}
+.line{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0px;
+}
+.tab1 input:focus,
+.tab1 input:valid{
+    padding: 20px 0px 0px 10px;
+    border: 2px solid navy;
+    border-radius: 3px;
+    transition: 0.5s ease;
+}
+.form-group input:focus ~ label,
+.form-group input:valid ~ label{
+    transform: translateY(-18px);
+    font-size: 14px;
+    color: navy;
+    transition: 0.2s ease;
+}
+.tab1 h6{
+    margin: 20px 0px;
+}

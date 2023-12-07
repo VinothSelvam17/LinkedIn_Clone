@@ -1,0 +1,42 @@
+extends layout/main_layout.pug 
+block content
+    .container-fluid.htab
+        .row.hnav
+            .col-md-3.htab1
+                .logo
+                    a(href='#')
+                    img(src='/images/logo.png' height='38px')
+                .search
+                    span.fa.fa-search
+                    input(type='text' placeholder='Search')
+            .col-md-7
+                ul.nav-center(type='none')
+                    li
+                        a.active-link(href='#')
+                            i.fa.fa-home 
+                            span Home
+                    li
+                        a(href='#')
+                            i.fa.fa-user 
+                            span My Network
+                    li
+                        a(href='#')
+                            i.fa.fa-briefcase 
+                            span Jobs
+                    li
+                        a(href='#')
+                            i.fa.fa-commenting
+                            span Messaging
+                    li
+                        a(href='#')
+                            i.fa.fa-bell
+                            span Notifications
+            .col-md-2.nav-right
+                img(src='/images/profilePic.png')
+                a(href="/logoutPage")  Logout
+    script.
+        let requested_postId='!{postId}';
+    .container 
+        h1 View post 
+        .messages
+    script(src="/js/post.js")

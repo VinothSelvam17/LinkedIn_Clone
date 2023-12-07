@@ -1,0 +1,395 @@
+body{
+    background-color: rgb(232, 229, 229);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+.htab{
+    background-color: rgb(232, 229, 229);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    user-select: none;
+}
+.htab1{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+}
+.hnav{
+    background-color: white;
+    /* position: sticky;
+    top: 0px; */
+    box-shadow: 1px 1px 5px rgb(167, 166, 166);
+}
+.search{
+    display: flex;
+    align-items: center;
+    background: rgb(240, 239, 239);
+    padding: 0px 0px 0px 10px;
+    border-radius: 60px;
+    color: rgb(169, 169, 169);
+    margin-left: 10px;
+}
+
+.search input{
+    outline: none;
+    border: none;
+    padding: 8px;
+    background: rgb(240, 239, 239);
+    border-radius: 30px;
+}
+.nav-center{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.nav-center li{
+    margin: 0px 10px;
+}
+.nav-center li a{
+    margin: 0.2rem 0.5rem;
+    color: rgb(155, 154, 154);
+    text-decoration: none;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.nav-center li a:hover,
+.nav-center li .active-link{
+    color: black;
+}
+.nav-center li a i{
+    font-size: 17px;
+}
+.nav-center li a i span{
+    padding-left: 3px;
+}
+.nav-center a{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 17px;
+}
+.nav-center a i{
+    font-size: 1.2rem;
+    padding-right: 0.5rem;
+}
+.nav-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-right img{
+    background-color: gray;
+    height: 45px;
+    border-radius: 50%;
+    display: block;
+    cursor: pointer;
+    margin:0px  10px;
+} 
+.nav-right a{
+    background-color: white;
+    border: none;
+    text-decoration: none;
+    color: #000;
+}
+.nav-right a:hover{
+    color: blue;
+}
+.center{
+    padding: 10px;
+}
+.ctop{
+    /* box-shadow: 1px 1px 1px 0px rgb(225, 224, 224),
+                    2px 1px 2px 2px rgb(225, 224, 224); */
+                    background-color: white;
+}
+.center .post{
+    width:100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(215, 214, 214);
+    padding-left: 20px;
+}
+.center .post img{
+    height: 60px;
+    width: 60px;
+    background-color: gray;
+    border-radius: 50%;
+    text-align: center;
+}
+.center .post textarea{
+    width: 100%;
+    outline: none;
+    border: none;
+    resize: none;
+    margin: 30px 0px 0px 10px;
+}
+/* .center .post button{
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: large;
+    font-weight: 600;
+    border-radius: 5px;
+} */
+.option .ul1{
+    height: 45px;
+    display: flex;
+    align-items: center;
+    font-size: large;
+    font-weight: 600;
+}
+.option .ul1 .li1 span{
+    padding:0px 10px;
+}
+.option .ul1 .li1{
+    height: 2.8rem;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid rgb(215, 214, 214);
+}
+.option .ul1 .li1:hover{
+    color: white;
+    background-color: blue;
+}
+.pstcnt{
+    cursor: pointer;
+}
+#PostBtn{
+    width:100%;
+    height: 45px;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: large;
+    background-color: blue;
+    overflow: hidden;
+}
+.li{
+    display: flex;
+    cursor: pointer;
+}
+.li span{
+    margin: -5px 5px;
+}
+#PostBtn:disabled{
+    background-color: #9bd1f9;
+}
+.content{
+    background: white;
+    padding: 10px 15px;
+    margin-top: 15px;
+}
+.posts{
+    display: flex;
+    align-items: start;
+    margin-bottom: 10px;
+}
+.posts img{
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 5px;
+    background-color: blue;
+}
+.posts i{
+    font-size: x-large;
+}
+.posts small{
+    display: block;
+}
+.content{
+    cursor: pointer;
+}
+.content .ul{
+    display: flex;
+    align-items: center;
+}
+.content .li{
+    width: 100%;
+}
+.content .li button{
+    width: 100%;
+    font-size: larger;
+    border: none;
+    outline: none;
+    background-color: rgb(250, 243, 243);
+}
+.content .li button i {
+    pointer-events: none;
+}
+.content .li button:hover,
+.active{
+    color:blue ;
+}
+.left{
+    background-color:white;
+    padding: 15px;
+    margin-top: 12px;    
+}
+.left p{
+    color: grey;
+}   
+.retweetText {
+    padding-left: 50px;
+    font-weight: 600;
+    font-size: 13px;
+    color: gray;
+    margin-bottom: 5px;
+}
+.comment-section{
+    background-color: rgb(193, 203, 229);
+    padding:5px;
+    display: none;
+}
+.comment-section .textareaDiv{
+    width:100%;
+    height:50px;
+    margin-bottom: 15px;
+    display:flex;
+    position: relative;
+}
+.comment-section .textareaDiv textarea{
+    flex:1;
+    resize:none;
+    outline:none;
+    border:none;
+    padding:10px 10px 5px 10px;
+}
+.comment-section .textareaDiv .btnClear{
+    background-color:rgb(60, 0, 255);
+position: absolute;
+top: 0px;
+right: 55px;
+padding: 5px;
+}
+.comment-section .textareaDiv .btnClear:hover{
+    color: white;
+}
+.comment-section .textareaDiv .btnsend{
+    background-color: blue;
+    color: #fff;
+    width: 55px;
+    font-size: 20px;
+    font-weight: bolder;
+    border: none;
+}
+.comment{
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid white;
+    display: flex;
+    gap:10px;
+    font-size: 1rem;
+}
+.comment .user-pic{
+    width: 50px;
+    height: 50px;
+}
+.comment-body{
+    flex:1;
+}
+.comment-header{
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.comment-section.commentActive{
+display: block;
+}
+.content{
+    position: relative;
+    padding-top: 10px;
+}
+.del-button{
+    background: none;
+    border: none;
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    font-size: 25px;
+}
+.right{
+    margin-top: 10px;
+    background-color: #fff;
+}
+.color{
+    height: 100px;
+    width: 100%;
+    background-color: blue;
+    margin-top: 0.8rem;
+}
+.sidebar-profile img{
+    margin-top: -3.5rem;
+    margin-left: 1.8rem;
+    border: 0.3rem solid white;
+    border-radius: 50%;
+}
+.modal-box{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(161, 160, 160);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.6);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+.show-modal{
+    opacity: 0.9;
+    visibility: visible;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+.modal-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 1rem 1.5rem;
+    width: 28rem;
+    border-radius: 0.5rem;
+    margin-bottom: 10px;
+}
+.modal-header{
+    display: flex;
+    height: 30px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.modal-buttons{
+    display: flex;
+    gap: 10px;
+}
+.close-button{
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color:lightgray;
+    color: #000;
+    padding:5px 10px;
+    border: none;
+}
+.close-button:hover{
+    background-color: red;
+    color: white;
+}
+#btnDelete{
+    background-color: lightgray;
+    color: #000;
+    padding: 5px 10px;
+    border-radius: 0.25rem;
+    border: none;
+}
+#btnDelete:hover{
+    background-color: darkgreen;
+    color: white;
+}
